@@ -1,0 +1,50 @@
+'$schema' = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$line_break\
+$character\
+"""
+add_newline = false
+
+[character]
+success_symbol = '[>](bold white)'
+error_symbol = '[>](bold red)'
+vimcmd_symbol = '[<](bold white)'
+vimcmd_replace_one_symbol	= '[<](bold purple)'
+vimcmd_replace_symbol	= '[<](bold purple)'
+vimcmd_visual_symbol= '[<](bold yellow)'
+
+[directory]
+style = 'bold green'
+fish_style_pwd_dir_length = 1
+truncate_to_repo = false
+truncation_length = 1
+
+[git_branch]
+format = '[$branch](bold white) '
+
+[git_commit]
+style = 'bold red'
+
+[git_status]
+format = '$all_status$ahead_behind'
+conflicted = '[=](bold red)'
+ahead = '[⇡](bold green)'
+behind = '[⇣](bold red)'
+diverged = '[⇕](bold yellow)'
+untracked = '[?](bold red)'
+stashed = '[$](bold blue)'
+modified = '[!](bold yellow)'
+staged = '[+](bold green)'
+renamed = '[»](bold purple)'
+deleted = '[✘](bold red)'
+
+[kubernetes]
+format = '[$context](bold blue):[$namespace](bold yellow) '
+disabled = false

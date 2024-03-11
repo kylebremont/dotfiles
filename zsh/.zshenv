@@ -1,4 +1,4 @@
-# export ZDOTDIR=~/.config/zsh
+export GOPATH=~/go
 
 path=(~/.local/bin $path)
 path=(/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin $path)
