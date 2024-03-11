@@ -1,0 +1,7 @@
+[user]
+	name = Kyle Bremont
+	email = kyle.bremont@wpengine.com
+[core]
+	excludesfile = /Users/kyle.bremont/.gitignore
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
